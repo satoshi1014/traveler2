@@ -1,3 +1,250 @@
 // Place all the styles related to the spots controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: https://sass-lang.com/
+.wrapper{
+  color: black;
+}
+.header{
+  color: black;
+  margin: 0 0 40px;
+}
+.header-content{
+  color: black;
+  border-bottom: 1px dotted #bbb;
+  padding: 20px 0 20px;
+  margin: 0 25%;
+  display: flex;
+  justify-content: center;
+}
+.main-title{
+  color: black;
+}
+.main-title-buttun{
+  color: black;
+  text-decoration: none;
+  font-size: 270%;
+  font-family: serif;
+}
+.text-hidden{
+  color: black;
+}
+.main{
+  color: black;
+}
+.main-content{
+  color: black;
+}
+.wide-content{
+  color: black;
+  margin: 0 25%;
+}
+.loop{
+  color: black;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.loop-article{
+  color: black;
+  margin-bottom: 60px;
+}
+.area{
+  color: black;
+  display: flex;
+  justify-content: center;
+  margin: 0 0 10px;
+}
+.area-description{
+  color: black;
+  text-decoration: none;
+  font-family: serif;
+}
+.image-space{
+  color: black;
+}
+.image-buttom{
+  color: black;
+}
+.top-image{
+  color: black;
+  width: 100%;
+  border: 1px solid #ccc;
+  padding: 1px;
+}
+.sab-text{
+  color: black;
+  padding: 10px 0;
+}
+.sab-text-class{
+  color: black;
+  text-decoration: none;
+  font-family: serif;
+}
+.category-box{
+  color: black;
+  border-top: 1px dotted #bbb;
+  border-bottom: 1px dotted #bbb;
+  margin: 0 0 40px;
+  padding: 10px 0;
+}
+.text-center{
+  color: black;
+  display: flex;
+  justify-content: space-around;
+}
+.list{
+  color: black;
+  list-style: none;
+}
+.list a{
+  color: black;
+  text-decoration: none;
+  font-family: serif;
+  font-size: 13px;
+}
+.new-main{
+  margin: 0 25%;
+}
+.new-content{
+  margin-bottom: 40px;
+  border-bottom: 1px dotted #bbb;
+}
+.page-title{
+  font-size: 313%;
+  font-family: serif;
+  line-height: 50px;
+  color: #e0e0e0;
+  font-style: oblique;
+  padding-bottom: 50px;
+  margin: 0;
+}
+.subtitle{
+  color: #777;
+  font-size: 14px;
+  height: 14px;
+  font-family: serif;
+  padding-bottom: 30px;
+}
+.wide-content-article{
+  
+}
+.article{
+  
+}
+.article-content{
+  color: black;
+  line-height: 25px;
+  font-family: Helvetica, Arial, 'ヒラギノ角ゴ Pro W3', 'Hiragino Kaku Gothic Pro', 'ヒラギノ角ゴ ProN', 'Hiragino Kaku Gothic ProN', 'メイリオ', Meiryo, 'ＭＳ Ｐゴシック', sans-serif;
+  margin-bottom: 30px;
+}
+.wpcf7{
+  padding: 40px 20px;
+  line-height: 22px;
+  background: #f7f7f7;
+  border-radius: 5px;
+  margin-bottom: 50px
+}
+.place-space{
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+.place{
+  width: 60%;
+  height: 40px;
+  border-radius: 5px;
+  font-size: 25px;
+  text-align: center;
+  margin-bottom: 30px;
+}
+.place-logo{
+  font-family: serif;
+  margin-bottom: 8px;
+}
+.address-space{
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+.address{
+  width: 60%;
+  height: 60px;
+  border-radius: 5px;
+  font-size: 25px;
+  text-align: center;
+  margin-bottom: 30px;
+}
+.address-logo{
+  font-family: serif;
+  margin-bottom: 8px;
+}
+.impression-space{
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+.impression{
+  width: 60%;
+  height: 40px;
+  border-radius: 5px;
+  font-size: 25px;
+  text-align: center;
+  margin-bottom: 30px;
+}
+.impression-logo{
+  font-family: serif;
+  margin-bottom: 8px;
+}
+.thought-space{
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+.thought{
+  width: 60%;
+  height: 60px;
+  border-radius: 5px;
+  font-size: 25px;
+  text-align: center;
+  margin-bottom: 30px;
+}
+.thought-logo{
+  font-family: serif;
+  margin-bottom: 8px;
+}
+.image-area{
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+.image{
+  margin-bottom: 30px;
+}
+.image-logo{
+  font-family: serif;
+  margin-bottom: 8px;
+}
+.send{
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+.send-buttom{
+  font-family: serif;
+  color: white;
+  background-color: blue;
+  width: 60%;
+  border-radius: 5px;
+}
