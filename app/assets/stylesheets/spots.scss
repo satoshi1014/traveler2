@@ -343,3 +343,28 @@
     border-radius: 5px;
     padding: 10px;
 }
+.btn-space {
+    list-style: none;
+    /* text-decoration: none; */
+    display: flex;
+    justify-content: center;
+}
+.show-btn {
+    margin: 0 20px 60px 0;
+}
+.show-edit-btn {
+    text-decoration: none;
+    color: white;
+    background-color: lightgreen;
+    border-radius: 5px;
+    padding: 5px 20px;
+    font-family: serif;
+}
+.show-delete-btn {
+    text-decoration: none;
+    color: white;
+    background-color: red;
+    border-radius: 5px;
+    padding: 5px 20px;
+    font-family: serif;
+}
