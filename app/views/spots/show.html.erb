@@ -25,10 +25,10 @@
   <div class="btn-area">
     <ul calss="btn-space">
       <li class="btn-space-edit show-btn">
-        編集
+        <%= link_to '編集', "/spots/#{@spot.id}/edit", class: "show-edit-btn" %>
       </li>
       <li class="btn-space-delete show-btn">
-        削除
+        <%= link_to '削除', "/spots/#{@spot.id}", method: :delete, class: "show-delete-btn" %>
       </li>
     </ul>
   </div>
