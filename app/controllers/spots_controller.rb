@@ -3,6 +3,10 @@ class SpotsController < ApplicationController
     @spots = Spot.all
   end
 
+  def show
+    @spot = Spot.find(params[:id])
+  end
+
   def new
     @spot = Spot.new
   end
@@ -19,13 +23,11 @@ class SpotsController < ApplicationController
   def update
     @spot = Spot.find(params[:id])
     @spot.update(spot_params)
-    # redirect_to root_path
   end 
 
   def destroy
     @spot = Spot.find(params[:id])
     @spot.destroy
-    redirect_to root_path
   end 
 
   private
