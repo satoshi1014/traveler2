@@ -18,8 +18,8 @@
             <div class="header-menu-items">
               <ul class="header-menu-space">
                 <li class="header-menu-btn">
-                  <a href="#" class="new-form-btn btn">
-                    投稿する
+                  <%= link_to "投稿する",new_spot_path, class: "new-form-btn btn" %>
+                    
                   </a>
                 </li>
               </ul>
@@ -28,10 +28,13 @@
         </div>
         <div class="header-content">
           <h1 class="main-title">
-            <a href="#" class="main-title-buttun">
-              <span class="text-hidden">Traveler</span>
-            </a>
+            <%= link_to "Traveler", root_path ,class: "main-title-buttun" %>
           </h1>
+          <p class="site-description">
+            さまざまな旅行先を
+            <br>
+            皆に共有しよう！
+          </p>
         </div>
       </header>
       <%= yield %>
