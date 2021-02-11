@@ -1,0 +1,25 @@
+<div class="new-main">
+  <div class="new-content">
+    <h1 class="subtitle">
+      <%= @spot.place %>
+    </h1>
+    <h1 class="subtitle">
+      <%= @spot.one_word %>
+    </h1>
+  </div>
+  <div class="show-address">
+    <p class="show-address-content">
+      <%= @spot.address %>
+    </p>
+  </div>
+  <div class="wide-content-article">
+    <div class="wpcf7">
+      <div class="show-image">
+        <%= image_tag @spot.image, class: "top-image" %>
+      </div>
+      <p class="show-thought">
+        <%= @spot.thought %>
+      </p>
+    </div>
+  </div>
+</div>
