@@ -17,19 +17,19 @@
         <%= form_for(@spot) do |f| %>
           <div class="place-space">
             <%= f.label :place, "場所名", {class: 'place-logo'} %>
-            <%= f.text_field :place, class: "place" %>
+            <%= f.text_field :place,:placeholder => "例: 東京スカイツリー", class: "place" %>
           </div>
           <div class="address-space">
             <%= f.label :address, "場所", {class: 'address-logo'} %>
-            <%= f.text_area :address, class: "address" %>
+            <%= f.text_area :address,:placeholder => "例:　東京都墨田区", class: "address" %>
           </div>
           <div class="impression-space">
             <%= f.label :one_word, "ひとこと", {class: 'impression-logo'} %>
-            <%= f.text_field :one_word, class: "impression" %>
+            <%= f.text_field :one_word,:placeholder => "例:　見上げた迫力がすごい", class: "impression" %>
           </div>
           <div class="thought-space">
             <%= f.label :thought, "感想", {class: 'thought-logo'} %>
-            <%= f.text_area :thought, class: "thought" %>
+            <%= f.text_area :thought,:placeholder => "自分が思ったことを何でもいいので書いてください。", class: "thought" %>
           </div>
           <div class="image-area">
             <%= f.label :image, "写真", {class: 'image-logo'} %>
