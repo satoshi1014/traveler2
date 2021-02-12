@@ -1,3 +1,95 @@
-// Place all the styles related to the users controller here.
-// They will automatically be included in application.css.
-// You can use Sass (SCSS) here: https://sass-lang.com/
+.body {
+    background-color: #d3d3d3;
+    font-family: 'Montserrat', sans-serif;
+    color: #fff;
+    font-size: 14px;
+    letter-spacing: 1px;
+    height: 1024px;
+    width: 100%;
+    /* background: url(https://picsum.photos/id/1004/5616/3744) no-repeat center center #505050; */
+    /* display: flex; */
+    /* justify-content: center; */
+}
+.login {
+    position: relative;
+    height: 100%;
+    /* width: 88%; */
+    margin: auto;
+    /* padding: 50% 50%; */
+    background: url(https://picsum.photos/id/1004/5616/3744) no-repeat center center #505050;
+    background-size: cover;
+    // box-shadow: 0px 30px 60px -5px #000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+form {
+    padding-top: 80px;
+}
+h2.sign-up-title {
+    border-bottom: 2px solid #1161ed;
+    padding-left: 12px;
+    font-size: 22px;
+    text-transform: uppercase;
+    padding-bottom: 5px;
+    letter-spacing: 2px;
+    display: inline-block;
+    font-weight: 100;
+}
+.sign-up-email, .sign-up-password, .sign-up-password-conformation {
+    text-transform: uppercase;
+    font-size: 12px;
+    opacity: 0.7;
+    display: inline-block;
+    position: relative;
+    top: -65px;
+    transition: all 0.5s ease-in-out;
+}
+.email, .password, .password-conformation {
+    border: none;
+    width: 89%;
+    padding: 10px 20px;
+    display: block;
+    height: 15px;
+    border-radius: 20px;
+    background: rgba(255, 255, 255, 0.1);
+    border: 2px solid rgba(255, 255, 255, 0);
+    overflow: hidden;
+    margin-top: 15px;
+    transition: all 0.5s ease-in-out;
+    outline: 0;
+    border: 2px solid rgba(255, 255, 255, 0.5);
+    border-radius: 20px;
+    background: rgba(0, 0, 0, 0);
+    font-family: 'Montserrat', sans-serif;
+    color: #fff;
+    display: inline-block;
+    padding-top: 13px;
+    font-size: 14px;
+    position: relative;
+    top: -70px;
+}
+.sign-up-title, .sign-up-email, .sign-up-password, .sign-up-password-conformation {
+    margin-left: 20px;
+}
+input.sign-up-btn {
+    background-color: #1161ed;
+    color: #FFF;
+    width: 100%;
+    padding: 10px 20px;
+    display: block;
+    height: 39px;
+    border-radius: 20px;
+    margin-top: -30px;
+    transition: all 0.5s ease-in-out;
+    border: none;
+    text-transform: uppercase;
+}
+.sign-up-btn:hover {
+    background: #4082f5;
+    box-shadow: 0px 4px 35px -5px #4082f5;
+    cursor: pointer;
+}
+input.sign-up-btn {
+    outline: none;
+}
