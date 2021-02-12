@@ -1,8 +1,14 @@
 <div class="body">
   <div class="login">
     <div class="login-space">
-      <h2 class="sign-up-title">sign up</h2>
-      <h2 class="sign-in-title"><a href="/users/sign_in" class="sign-in-title-btn">sign-in</a></h2>
+      <h2 class="sign-up-title">
+        sign up
+      </h2>
+      <h2 class="sign-in-title">
+        <a href="/users/sign_in" class="sign-in-title-btn">
+          sign-in
+        </a>
+      </h2>
 
       <%= form_for(resource, as: resource_name, url: registration_path(resource_name), html: { class: "form" }) do |f| %>
         <%= render "devise/shared/error_messages", resource: resource %>
