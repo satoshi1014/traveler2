@@ -12,12 +12,12 @@
       <div class="user-page">
         <div class="user-image-space">
           <div class="user-items">
-            <%= image_tag 'sample.jpg', class: "user-image" %>
+            <%= image_tag @user.image, class: "user-image" %>
           </div>
           <ul class="user-information">
-            <li class="name">福山聡</li>
-            <li class="from">鹿児島県</li>
-            <li class="age">19歳</li>
+            <li class="name"><%= @user.name %></li>
+            <li class="from"><%= @user.from %></li>
+            <li class="age"><%= @user.age %></li>
           </ul>
       </div>
     </div>
