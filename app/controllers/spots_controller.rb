@@ -13,6 +13,7 @@ class SpotsController < ApplicationController
 
   def create
     @spot = Spot.create(spot_params)
+    # binding.pry
     redirect_to root_path
   end 
 
