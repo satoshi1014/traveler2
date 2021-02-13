@@ -13,6 +13,9 @@
         <h1 class="user-page-title">
           自己紹介
         </h1>
+        <p class="user-edit-space">
+          <%= link_to '編集',edit_user_path(current_user), class: "user-edit-btn" %>
+        </p>
         <div class="user-image-space">
           <div class="user-items">
             <%= image_tag @user.image, class: "user-image" %>

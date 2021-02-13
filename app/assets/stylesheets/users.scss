@@ -197,8 +197,19 @@ h1.user-page-title {
     font-size: 14px;
     height: 14px;
     font-family: serif;
-    position: relative;
-    top: -20px;
+    margin-top: -20px;
+}
+p.user-edit-space {
+    float: right;
+    margin-top: -15px;
+}
+a.user-edit-btn {
+    text-decoration: none;
+    color: white;
+    background: lightgreen;
+    padding: 3px 10px;
+    border-radius: 4px;
+    font-family: serif;
 }
 .user-image-space {
     display: flex;

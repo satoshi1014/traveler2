@@ -115,10 +115,11 @@
   color: black;
 }
 .top-image{
-  color: black;
-  width: 100%;
+  width: 360px;
+  height: 160px;
   border: 1px solid #ccc;
   padding: 1px;
+  object-fit: cover;
 }
 .sab-text{
   color: black;
