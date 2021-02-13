@@ -185,3 +185,39 @@ label.checkbox-name {
     position: relative;
     top: -49px;
 }
+.user-content {
+    border-bottom: 1px dotted #bbb;
+    margin-bottom: 40px;
+}
+.user-page {
+    margin-bottom: 40px;
+}
+.user-image-space {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 20% 0;
+}
+.user-image {
+    object-fit: cover;
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+}
+.user-information {
+    list-style: none;
+    display: flex;
+    flex-flow: column;
+    justify-content: space-around;
+}
+.name {
+    font-family: serif;
+    letter-spacing: 2px;
+}
+.from {
+    font-family: serif;
+    letter-spacing: 2px;
+}
+.age {
+    font-family: serif;
+    letter-spacing: 2px;
+}
