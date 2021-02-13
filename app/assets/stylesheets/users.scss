@@ -192,10 +192,18 @@ label.checkbox-name {
 .user-page {
     margin-bottom: 40px;
 }
+h1.user-page-title {
+    color: #777;
+    font-size: 14px;
+    height: 14px;
+    font-family: serif;
+    position: relative;
+    top: -20px;
+}
 .user-image-space {
     display: flex;
     justify-content: space-between;
-    padding: 0 20% 0;
+    padding: 0 10% 0;
 }
 .user-image {
     object-fit: cover;

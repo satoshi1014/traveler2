@@ -10,14 +10,17 @@
   <div class="wide-content-article">
     <div class="user-content">
       <div class="user-page">
+        <h1 class="user-page-title">
+          自己紹介
+        </h1>
         <div class="user-image-space">
           <div class="user-items">
             <%= image_tag @user.image, class: "user-image" %>
           </div>
           <ul class="user-information">
-            <li class="name user-core"><%= @user.name %></li>
-            <li class="from user-core"><%= @user.from %></li>
-            <li class="age user-core"><%= @user.age %></li>
+            <li class="name user-core"><span class="topic">名前：</span><%= @user.name %></li>
+            <li class="from user-core"><span class="topic">出身：</span><%= @user.from %></li>
+            <li class="age user-core"><span class="topic">年齢：</span><%= @user.age %></li>
           </ul>
       </div>
     </div>
@@ -25,7 +28,7 @@
 </div>
 <div class="main">
   <div class="main-content">
-     <div class="wide-content">
+     <div class="new-wide-content">
       <div class="loop">
          <%= render partial: "spots/spot", collection: @spots %>
       </div>
