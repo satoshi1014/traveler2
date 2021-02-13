@@ -13,7 +13,6 @@ class SpotsController < ApplicationController
 
   def create
     @spot = Spot.create(spot_params)
-    # binding.pry
     redirect_to root_path
   end 
 
@@ -33,6 +32,6 @@ class SpotsController < ApplicationController
 
   private
   def spot_params
-    params.require(:spot).permit(:place, :address, :one_word, :thought, :image)
+    params.require(:spot).permit(:place, :address, :one_word, :thought, :image).merge(user_id: current_user.id)
   end
 end
