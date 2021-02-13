@@ -1,9 +1,33 @@
-<p>MyPage <%= @user.id %></p>
+<div class="new-main">
+  <div class="new-content">
+    <p class="page-title">
+      My page
+    </p>
+    <h1 class="subtitle">
+      マイページ
+    </h1>
+  </div>
+  <div class="wide-content-article">
+    <div class="user-content">
+      <div class="user-page">
+        <div class="user-image-space">
+          <div class="user-items">
+            <%= image_tag 'sample.jpg', class: "user-image" %>
+          </div>
+          <ul class="user-information">
+            <li class="name">福山聡</li>
+            <li class="from">鹿児島県</li>
+            <li class="age">19歳</li>
+          </ul>
+      </div>
+    </div>
+  </div>
+</div>
 <div class="main">
   <div class="main-content">
      <div class="wide-content">
       <div class="loop">
-         <%= render partial: "spots/spot", collection: @spots
+         <%= render partial: "spots/spot", collection: @spots %>
       </div>
      </div>
   </div>
