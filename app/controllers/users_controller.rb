@@ -1,7 +1,7 @@
 class UsersController < ApplicationController
   def show
     @user = User.find(params[:id])
-    @spots = Spot.all
+    @spots = Spot.order("created_at DESC").page(params[:page]).per(6)
   end 
 
   def edit 
