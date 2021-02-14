@@ -32,14 +32,25 @@
       </li>
     </ul>
   </div>
-  <h2>コメントする</h2>
-  <%= form_with(model:[@spot, @comment], method: :post) do |f| %>
-    <%= f.text_area :comment_content %>
-    <%= f.hidden_field :spot_id, value: @spot.id %>
-    <%= f.submit 'コメントする' %>
-  <% end %>
-  <h2>コメント一覧</h2>
-  <% @comments.each do |comment| %>
-    <%=  comment.comment_content %>
-  <% end %>
+  <div class="comment-area">
+    <div class="comment-form">
+      <%= form_with(model:[@spot, @comment], method: :post, class: "comment-main-form") do |f| %>
+        <%= f.text_area :comment_content, class: "comment-form-area" %>
+        <%= f.hidden_field :spot_id, value: @spot.id %>
+        <%= f.submit 'コメントする', class: "comment-form-btn" %>
+      <% end %>
+    </div>
+    <div class="comment-display">
+      <h2 class="comment-title">
+        コメント一覧
+      </h2>
+      <div class="comment-items">
+        <% @comments.each do |comment| %>
+          <p class="comment-core">
+            <%=  comment.comment_content %>
+          </p>
+        <% end %>
+      </div>
+    </div>
+  </div>
 </div>
