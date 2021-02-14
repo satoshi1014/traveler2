@@ -19,6 +19,28 @@ form.comment-main-form {
 input.comment-form-btn {
     font-family: serif;
     border-radius: 5px;
+        text-align: center;
+    color: #000;
+    border: 2px solid #b6b4b4fb;
+    display: inline-block;
+    transition: all 0.2s ease-in-out;
+    overflow: hidden;
+    &:before {
+    content: "";
+    background-color: rgba(255,255,255,0.5);
+    display: block;
+    transform: skewX(-45deg) translateX(0);
+    transition: none;
+  }
+  &:hover {
+    background-color: #b6b4b4fb;
+    color: #fff;
+    border-bottom: 4px solid darken(#b6b4b4fb, 10%);
+    &:before {
+      transform: skewX(-45deg) translateX(13.5em);
+     transition: all 0.5s ease-in-out;
+    }
+  }
 }
 h2.comment-title {
     color: #777;
