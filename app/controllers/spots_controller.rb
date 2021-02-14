@@ -5,6 +5,8 @@ class SpotsController < ApplicationController
 
   def show
     @spot = Spot.find(params[:id])
+    @comments = @spot.comments
+    @comment = current_user.comments.new
   end
 
   def new
