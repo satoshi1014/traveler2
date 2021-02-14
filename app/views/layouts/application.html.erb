@@ -33,6 +33,9 @@
                 <li class="header-menu-btn">
                   <%= link_to "サインアップ", new_user_registration_path, class: "header-sign-up-btn" %>
                 </li>
+                <li class="header-menu-btn">
+                  <%= link_to "マイページ",user_path(current_user) , class: "header-mypage-btn" %>
+                </li>
               </ul>
             </div>
           </div>
