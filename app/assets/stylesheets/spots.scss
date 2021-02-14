@@ -340,6 +340,15 @@
 }
 .show-image {
     margin-bottom: 40px;
+    display: flex;
+    justify-content: center;
+}
+.sab-image{
+  width: 700px;
+    height: 400px;
+    border: 1px solid #ccc;
+    padding: 1px;
+    object-fit: cover;
 }
 .show-thought {
     font-family: serif;
