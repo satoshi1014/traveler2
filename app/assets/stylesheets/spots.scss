@@ -37,22 +37,57 @@
   list-style: none;
 }
 .header-menu-btn{
-  background-color: white;
+  // background-color: white;
   border-radius: 3px;
-  padding: 5px;
+  // padding: 5px;
   margin-left: 10px;
-  border: 1px solid black;
+  // border: 1px solid black;
 }
 .new-form-btn{
   font-family: serif;
+  text-decoration: none;
 }
 .home-btn{
   font-family: serif;
+  text-decoration: none;
+}
+a.header-sign-out-btn {
+    text-decoration: none;
+    font-family: serif;
+}
+a.header-mypage-btn {
+    text-decoration: none;
+    font-family: serif;
 }
 .btn{
-  color: black;
+  // color: black;
+  border-radius: 5px;
+  padding: 3px;
   text-decoration: none;
   font-family: serif;
+  
+    text-align: center;
+    color: rgb(17, 20, 17);
+    border: 1.5px solid rgb(17, 20, 17);
+    display: inline-block;
+    transition: all 0.2s ease-in-out;
+    overflow: hidden;
+    &:before {
+    content: "";
+    background-color: rgba(255,255,255,0.5);
+    display: block;
+    transform: skewX(-45deg) translateX(0);
+    transition: none;
+  }
+  &:hover {
+    background-color: rgb(17, 20, 17);
+    color: #fff;
+    border-bottom: 4px solid darken(rgb(17, 20, 17), 10%);
+    &:before {
+      transform: skewX(-45deg) translateX(13.5em);
+     transition: all 0.5s ease-in-out;
+    }
+  }
 }
 .header-content{
   color: black;

@@ -25,16 +25,10 @@
                   <%= link_to "ホームへ戻る", root_path, class: "home-btn btn" %>
                 </li>
                 <li class="header-menu-btn">
-                  <%= link_to "サインイン", new_user_session_path, class: "header-sign-in-btn" %>
+                  <%= link_to "サインアウト", destroy_user_session_path, method: :delete, class: "header-sign-out-btn btn" %>
                 </li>
                 <li class="header-menu-btn">
-                  <%= link_to "サインアウト", destroy_user_session_path, method: :delete, class: "header-sign-out-btn" %>
-                </li>
-                <li class="header-menu-btn">
-                  <%= link_to "サインアップ", new_user_registration_path, class: "header-sign-up-btn" %>
-                </li>
-                <li class="header-menu-btn">
-                  <%= link_to "マイページ",user_path(current_user) , class: "header-mypage-btn" %>
+                  <%= link_to "マイページ",user_path(current_user) , class: "header-mypage-btn btn" %>
                 </li>
               </ul>
             </div>
