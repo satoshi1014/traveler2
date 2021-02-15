@@ -15,6 +15,14 @@
       <br class="clear">
       <div class="wpcf7">
         <%= form_for(@user) do |f| %>
+          <% if @user.errors.any? %>
+            <h3>入力した内容にエラーが<%= @user.errors.count %>件あります</h3>
+            <ul>
+              <% @user.errors.full_messages.each do |message| %>
+                <li><%= message %></li>
+              <% end %>
+            </ul>
+          <% end %>
           <div class="place-space">
             <%= f.label :name, "名前", {class: 'place-logo'} %>
             <%= f.text_field :name, class: "place" %>

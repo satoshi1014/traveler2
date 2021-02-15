@@ -10,7 +10,11 @@ class UsersController < ApplicationController
 
   def update
     @user = User.find(params[:id])
-    @user.update(user_params)
+    if @user.update(user_params)
+      render action: :update
+    else
+      render action: :edit
+    end 
   end 
 
   private
