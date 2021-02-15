@@ -18,7 +18,11 @@
         </p>
         <div class="user-image-space">
           <div class="user-items">
+          <% unless @user.image.present? %>
+            画像を設定してください
+          <% else %>
             <%= image_tag @user.image, class: "user-image" %>
+          <% end %>
           </div>
           <ul class="user-information">
             <li class="name user-core"><span class="topic">名前：</span><%= @user.name %></li>
