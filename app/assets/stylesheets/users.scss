@@ -260,6 +260,23 @@ p.force {
     flex-flow: column;
     justify-content: space-around;
 }
+.error-form {
+    display: flex;
+    justify-content: center;
+    margin-top: -60px;
+}
+h3.error {
+    font-family: serif;
+    color: red;
+}
+ul.error-point {
+    list-style: none;
+    text-align: center;
+    margin-bottom: 20px;
+}
+p.message {
+    font-family: serif;
+}
 .name {
     font-family: serif;
     letter-spacing: 2px;
@@ -271,4 +288,97 @@ p.force {
 .age {
     font-family: serif;
     letter-spacing: 2px;
+}
+.name-space{
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+.name-area{
+//   width: 60%;
+  height: 40px;
+  border-radius: 5px;
+  font-size: 15px;
+  text-align: center;
+  margin-bottom: 30px;
+}
+.name-logo{
+  font-family: serif;
+  margin-bottom: 8px;
+}
+.from-space{
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+.from-area{
+//   width: 60%;
+  height: 40px;
+  border-radius: 5px;
+  font-size: 15px;
+  text-align: center;
+  margin-bottom: 30px;
+}
+.from-logo{
+  font-family: serif;
+  margin-bottom: 8px;
+}
+.age-space{
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+.age-area{
+//   width: 60%;
+  height: 40px;
+  border-radius: 5px;
+  font-size: 15px;
+  text-align: center;
+  margin-bottom: 30px;
+}
+.age-logo{
+  font-family: serif;
+  margin-bottom: 8px;
+}
+.user-send{
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+.user-send-buttom{
+  font-family: serif;
+  // color: white;
+  // background-color: blue;
+  width: 200px;
+  border-radius: 5px;
+   text-align: center;
+    color: #2194E0;
+    border: 2px solid #2194E0;
+    display: inline-block;
+    transition: all 0.2s ease-in-out;
+    overflow: hidden;
+    &:before {
+    content: "";
+    background-color: rgba(255,255,255,0.5);
+    display: block;
+    transform: skewX(-45deg) translateX(0);
+    transition: none;
+  }
+  &:hover {
+    background-color: #2194E0;
+    color: #fff;
+    border-bottom: 4px solid darken(#2194E0, 10%);
+    &:before {
+      transform: skewX(-45deg) translateX(13.5em);
+     transition: all 0.5s ease-in-out;
+    }
+  }
 }

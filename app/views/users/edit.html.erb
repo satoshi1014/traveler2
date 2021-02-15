@@ -14,33 +14,41 @@
       </p>
       <br class="clear">
       <div class="wpcf7">
-        <%= form_for(@user) do |f| %>
-          <% if @user.errors.any? %>
-            <h3>入力した内容にエラーが<%= @user.errors.count %>件あります</h3>
-            <ul>
-              <% @user.errors.full_messages.each do |message| %>
-                <li><%= message %></li>
-              <% end %>
-            </ul>
-          <% end %>
-          <div class="place-space">
-            <%= f.label :name, "名前", {class: 'place-logo'} %>
-            <%= f.text_field :name, class: "place" %>
+        <div class="error-form">
+          <%= form_for(@user) do |f| %>
+            <% if @user.errors.any? %>
+              <h3 class="error">
+                入力した内容にエラーが<%= @user.errors.count %>件あります
+              </h3>
+              <ul class="error-point">
+                <% @user.errors.full_messages.each do |message| %>
+                  <li class="error-point-item">
+                    <p class="message">
+                      <%= message %>
+                    </p>
+                  </li>
+                <% end %>
+              </ul>
+            <% end %>
           </div>
-          <div class="impression-space">
-            <%= f.label :from, "出身", {class: 'impression-logo'} %>
-            <%= f.text_field :from, class: "impression", placeholder: "例：東京都" %>
+          <div class="name-space">
+            <%= f.label :name, "名前", {class: 'name-logo'} %>
+            <%= f.text_field :name, class: "name-area" %>
           </div>
-          <div class="impression-space">
-            <%= f.label :age, "年齢", {class: 'impression-logo'} %>
-            <%= f.text_field :age, class: "impression", placeholder: "例：20歳" %>
+          <div class="from-space">
+            <%= f.label :from, "出身", {class: 'from-logo'} %>
+            <%= f.text_field :from, class: "from-area", placeholder: "例：東京都" %>
+          </div>
+          <div class="age-space">
+            <%= f.label :age, "年齢", {class: 'age-logo'} %>
+            <%= f.text_field :age, class: "age-area", placeholder: "例：20歳" %>
           </div>
           <div class="image-area">
             <%= f.label :image, "ユーザー写真", {class: 'image-logo'} %>
             <%= f.file_field :image, class: "image" %>
           </div> 
-          <div class="send">
-            <%= f.submit  "Send", class: "send-buttom" %>
+          <div class="user-send">
+            <%= f.submit  "Send", class: "user-send-buttom" %>
           </div>
         <% end %>
       </div>
