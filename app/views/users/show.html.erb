@@ -19,7 +19,9 @@
         <div class="user-image-space">
           <div class="user-items">
           <% unless @user.image.present? %>
-            画像を設定してください
+            <p class="force">
+              ※ 画像を設定してください
+            </p>
           <% else %>
             <%= image_tag @user.image, class: "user-image" %>
           <% end %>

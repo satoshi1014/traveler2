@@ -244,6 +244,16 @@ a.user-edit-btn {
     width: 100px;
     height: 100px;
 }
+.user-items {
+    display: flex;
+    align-items: center;
+}
+p.force {
+    font-family: serif;
+    border: 1px solid #4a3d3d6e;
+    padding: 5px;
+    margin-top: 20px;
+}
 .user-information {
     list-style: none;
     display: flex;
